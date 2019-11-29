@@ -1,0 +1,242 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: arial,helvetica, sans-serif;
+	line-height: 1.5;
+	font-size: 15px; /*can be sumarize as font:15px/1.5 arial, helvetica, sans-serif*/
+	padding: 0px;
+	margin: 0px;		
+	background-color: #f4f4f4;
+	width: 100%;
+}
+	/*Global*/
+.container {
+	width: 80%;
+	margin: auto;/*shift all text to the right*/
+	overflow: hidden;
+}
+header ul {
+	margin: 0;
+	padding: 0;/*by default,the ul elements have margin, reason why we set it to 0;*/
+}	/*button*/
+.button_1 {
+	height: 38px;
+	border: none;
+	background: #a8491d;
+	color: #ffffff;
+	padding-left: 20px;
+	padding-right: 20px;
+}	
+	/*header*/
+header{
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;/*incase the screen becomes smaller, the height adjust*/
+	border-bottom: #a8491d 3px solid;
+}
+header a {
+	color: #ffffff;
+	text-decoration: none;/*removes the underline which the links have by default*/
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li {
+	display: inline;
+	float: left;
+	padding: 0 20px 0 20px;
+}
+header #branding {
+	float: left;
+}
+header #branding h1 {
+	margin: 0;
+}
+header nav {
+	float: right;
+	margin-top: 10px;	
+}
+header .highlight, header .current a{
+	color: #e8491d;
+	font-weight: bold;
+}
+header a:hover {
+	color: #cccccc;
+	font-weight: bold;
+}
+ul li ul {
+	padding: 0;
+	position: absolute;
+	top: 70px;
+	width: 220px;
+	visibility: hidden;
+}
+ul li ul li {
+	background: #00accc;
+	display: block;
+}
+ul li ul li:hover {
+	background: #dd0e;
+}
+ul li:hover ul {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+ul ul ul li {
+	display: none;
+}
+ul ul li:hover li{
+	display: block;
+}
+ul ul ul{
+	left: 100%;
+	top: 0;
+}
+  /*showcase area*/
+ #showcase {
+ 	min-height: 400px;
+ 	background: url(../../img/sony_showcase.jpg) no-repeat 0 -550px;
+ 	text-align: center;
+ 	color: rgb(234,0,222);
+ }
+ #showcase h1 {
+ 	margin-top: 100px;
+ 	font-size: 50px;
+ 	margin-bottom: 10px;
+ }
+ #showcase p {
+ 	font-size: 20px;
+ }
+ 	/*Newsletter*/
+ #newsletter {
+ 	padding: 15px;
+ 	background: #35424a;
+ 	color: #ffffff;
+ }
+ #newsletter h1 {
+ 	float: left;
+ }
+ #newsletter form {
+ 	float: right;
+ 	margin-top: 15px;
+ }
+ #newsletter input[type="email"] {
+ 	padding: 4px;
+ 	height: 25px;
+ 	width: 250px;
+ } 
+ 	/*boxes*/
+ #boxes {
+ 	margin-top: 20px;	
+ }
+ #boxes .box {
+ 	width: 30%;
+ 	padding: 10px;
+ 	float: left;
+ 	text-align: center;
+ }
+ #boxes .box img {
+ 	width: 90px;
+ 	height: 
+ }
+ 	/*main-col*/
+ article#main-col {
+ 	float: left;
+ 	width: 60%;
+ }
+ .dark {
+ 	padding: 20px;
+ 	background: #35424d;
+ 	color: #ffff;
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
+ }	
+
+ 	/*sidebarblog*/
+ aside#sidebar {
+ 	float: right;
+ 	width: 30%;
+
+ }
+ 	/*services-form*/
+ aside#sidebar .quote input, aside#sidebar .quote textarea {
+ 	width: 90%;
+ 	padding: 5px;
+ 	resize: none;
+ }	
+ 	/*services*/
+
+ ul#services li {
+ 	border: #cccccc 1px solid;
+ 	padding: 20px;
+ 	list-style: none;
+ 	margin-bottom: 5px;
+ 	background: #ececec;
+ }	
+
+ footer {
+ 	margin-top: 20px;
+ 	padding: 60px 0px;
+ 	text-align: center;
+ 	background: #e8491d;
+ 	color: #ffffff;
+ 	width: 100%;
+ 	height: 100px;
+ }
+ footer a {
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	font-size: 14px;
+ 	font-weight: bold;
+ }
+ footer li {
+ 	display: inline;
+ 	float: right;
+ 	padding: 3px;	
+ }
+footer.cookies h1 {
+ 	font-weight: bold;
+ 	color: white;
+ 	font-size: 20px;
+ 	text-align: center;
+ 	padding: 20px 0;
+ }
+ footer img {
+ 	width: 40px;
+ }
+  footer .cookies p{
+ 	max-width: 700px;
+ 	margin: 0 auto;	
+ 	text-align: center;
+ }
+ 
+ 	/*media queries*/
+ @media(max-width: 768px) {
+ 	header {
+ 		padding-bottom: 20px;
+ 	}
+ 	header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, article#main-col, aside#sidebar, form.quote{
+ 		text-align: center;
+ 		width: 100%;
+ 		float: none;	
+ 	}
+ 	#showcase h1 {
+ 		margin-top: 40px;
+ 	}
+ 	#newsletter button, .quote button {
+ 		display: block;
+ 		width: 100%;
+ 	}
+ 	#newsletter form input[type="email"], .quote input, .quote textarea {
+ 		width: 100%;
+ 		margin-bottom: 5px;	
+ 	}
+
+ }
+
+ }	
+ 
